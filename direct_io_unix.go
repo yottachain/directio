@@ -11,10 +11,10 @@ import (
 
 const (
 	// Size to align the buffer to
-	AlignSize = 4096
+	AlignSize = 512
 
 	// Minimum block size
-	BlockSize = 4096
+	BlockSize = 16 * 1024
 )
 
 // OpenFile is a modified version of os.OpenFile which sets O_DIRECT

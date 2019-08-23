@@ -13,7 +13,7 @@ const (
 	AlignSize = 0
 
 	// Minimum block size
-	BlockSize = 4096
+	BlockSize = 16 * 1024
 )
 
 func OpenFile(name string, flag int, perm os.FileMode) (file *os.File, err error) {

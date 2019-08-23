@@ -10,10 +10,10 @@ import (
 
 const (
 	// Size to align the buffer to
-	AlignSize = 4096
+	AlignSize = 512
 
 	// Minimum block size
-	BlockSize = 4096
+	BlockSize = 16*1024
 
 	// Extra flags for windows
 	FILE_FLAG_NO_BUFFERING  = 0x20000000
